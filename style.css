@@ -84,7 +84,6 @@ p {
   align-items: center;
   color: var(--color-white);
   padding: 16px;
-  position: fixed;
 }
 
 .navbar__menu {
@@ -112,7 +111,7 @@ p {
 
 /* home */
 #Home {
-  background: url(images/homebg.jpg) center center;
-  width: 100%;
-  height: 907px;
+  background: url("images/homebackground.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
 }
