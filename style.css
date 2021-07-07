@@ -120,15 +120,18 @@ p {
   padding: 40px;
   text-align: center;
 }
+
 .home__avatar{
   width:250px;
   height: 250px;
   border-radius: 50%;
   border:2px solid var(--color-white);
 }
+
 .home__title,.home__description{
   color:var(--color-white);
 }
+
 .home__contact{
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
@@ -137,4 +140,25 @@ p {
   border:2px solid var(--color-white);
   color:var(--color-white);
   border-radius: var(--size-border-radius);
+}
+
+/* section common */
+.section{
+  padding: 50px; 
+  text-align:center;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+/* About */
+.about_majors{
+  display: flex;
+  justify-content: space-between;
+  margin:80px 0;
+}
+.major__icon{
+  width: 170px;
+  height: 170px;
+  background: red;
+  margin:0 auto;
 }
