@@ -13,11 +13,12 @@
   --color-blue: #73aace;
   --color-yellow: #fff6cd;
   --color-black: #000;
+  --color-orange:#feac3e;
 
   /* font-size */
   --font-large: 48px;
   --font-medium: 28px;
-  --font-regular: 18px;
+  --font-regular: 21px;
   --font-small: 16px;
   --font-micro: 14px;
 
@@ -25,6 +26,7 @@
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
+  --weight-thin: 100;
 
   /* size */
   --size-border-radius: 4px;
@@ -66,19 +68,19 @@ h1 {
   margin: 16px 0px;
 }
 h2 {
-  font-size: var(--font-regular);
+  font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0;
 }
 h3 {
-  font-size: var(--weight-regular);
+  font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 8px 0;
 }
 p {
-  font-size: var(--weight-regular);
+  font-size: var(--font-small);
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
@@ -234,12 +236,25 @@ p {
 .skillset__left{
   flex-basis:60%;  
   background: var(--color-dark-grey);
+  padding: 15px 40px;
 }
 .skill__description{
   display: flex;
   justify-content: space-between;
-  padding:0 50px;
-  
+  margin-top:20px;
+}
+.skill__description span:first-child{font-size:16px;}
+.skill__bar{
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+  margin:10px 0 15px 0;
+  border-radius:30px;
+}
+.skill__value{
+  height: 3px; 
+  background:var(--color-orange);
+  border-radius:30px;
 }
 .skillset__right{
   flex-basis:40%;  
@@ -247,8 +262,9 @@ p {
 
 .tools{
   background: var(--color-grey);
+  padding:15px 0;
 }
-
 .etc{
-  background: var(--color-grey);
+  background: var(--color-light-grey);
+  padding:15px 0;
 }
