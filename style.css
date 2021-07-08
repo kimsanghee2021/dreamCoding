@@ -239,6 +239,7 @@ p {
   display: flex;
   justify-content: space-between;
   padding:0 50px;
+  
 }
 .skillset__right{
   flex-basis:40%;  
