@@ -118,7 +118,14 @@ p {
 .navbar_menu_item:hover {
   background-color: var(--color-dark-pink);
 }
-
+.navbar__toggle-btn{
+  position: absolute;
+  top:20px;
+  right:32px;
+  font-size:24px;
+  color:var(--color-white);
+  display: none;
+}
 /* home */
 #Home {
   background: url("images/homebackground.png") center/cover no-repeat;
@@ -364,9 +371,7 @@ p {
 #testimonials {
   background: var(--color-light-white);
 }
-.testimonials {
-  margin: 40px;
-}
+
 .testimonial {
   margin: 32px 0px;
   display: flex;
@@ -418,4 +423,28 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-yellow);
+}
+
+/* for blow 768px screen width */
+@media screen and (max-width: 768px){
+  .navbar__toggle-btn{display: block;}
+  #navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu{
+    flex-direction: column; 
+    width: 100%; 
+    text-align: center; 
+    display: none;
+  }
+  .about_majors{
+    flex-direction: column;
+  }
+  .major{margin-bottom:38px;}
+  .job{flex-direction: column; align-items: center;}
+  .skillset{flex-direction:column;}
+  .project{flex-grow:1;}
+  .testimonial__avatar{width: 80px; height: 80px;}
+  .testimonial__speech-bubble{}
 }
