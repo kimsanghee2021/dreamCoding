@@ -13,3 +13,15 @@ document.addEventListener('scroll', function(){
         navBar.classList.remove('navbar--dark');
     }
 });
+
+//handle scrolling when tapping on the navbar menu
+// 각 버튼을 클릭시 해당 영역으로 스크롤링 이동하기
+const navBarMenu = document.querySelector('.navbar__menu');
+navBarMenu.addEventListener('click', function(){
+
+    const target = event.target;
+    const link = target.dataset.link;
+    if(link == null){
+        return;
+    }console.log(event.target.dataset.link);
+});
