@@ -24,5 +24,16 @@ navBarMenu.addEventListener('click', function(event){
         return;
     }
     const scrollTo = document.querySelector(link);
+    //console.log(scrollTo);
     scrollTo.scrollIntoView({behavior: "smooth"});
+});
+
+//contact 버튼 클릭시 해당 영역으로 슬라이드 이동하기
+const contactBtn = document.querySelector('.home__contact');
+contactBtn.addEventListener('click', (e) => {
+    const contactBtnLink = e.target.dataset.link;
+    //console.log(contactBtnLink);
+    const contSection = document.querySelector(contactBtnLink);
+    //console.log(contSection);
+    contSection.scrollIntoView({behavior:'smooth'});
 });
