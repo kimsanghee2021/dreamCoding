@@ -8,7 +8,7 @@ document.addEventListener('scroll', function(){
     //console.log(`navBarHeight : ${navBarHeight}`);
     if(window.scrollY > navBarHeight){
         navBar.classList.add('navbar--dark');
-    }else{
+    } else{
         navBar.classList.remove('navbar--dark');
     }
 });
