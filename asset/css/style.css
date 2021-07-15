@@ -97,6 +97,7 @@ p {
   padding: 16px;
   width: 100%;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 99;
 }
 #navbar.navbar--dark {
   background: var(--color-pink);
