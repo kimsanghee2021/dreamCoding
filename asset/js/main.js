@@ -16,24 +16,22 @@ document.addEventListener('scroll', function(){
 /* 네비게이션 탭을 클릭시 각 해당 영역으로 슬라이드 이동하기 */
 const navBarMenu = document.querySelector('.navbar__menu'); 
 navBarMenu.addEventListener('click', function(event){
-
     const target = event.target;
     const link = target.dataset.link;
     //console.log(link);
     if(link == null){
         return;
     }
-    const scrollTo = document.querySelector(link);
-    //console.log(scrollTo);
-    scrollTo.scrollIntoView({behavior: "smooth"});
+    scrollIntoView(link);
 });
 
 //contact 버튼 클릭시 해당 영역으로 슬라이드 이동하기
 const contactBtn = document.querySelector('.home__contact');
-contactBtn.addEventListener('click', (e) => {
-    const contactBtnLink = e.target.dataset.link;
-    //console.log(contactBtnLink);
-    const contSection = document.querySelector(contactBtnLink);
-    //console.log(contSection);
-    contSection.scrollIntoView({behavior:'smooth'});
+contactBtn.addEventListener('click', () => {
+    scrollIntoView('#contact');
 });
+
+function scrollIntoView(selector){
+    const contSection = document.querySelector(selector);
+    contSection.scrollIntoView({behavior:'smooth'});
+}
