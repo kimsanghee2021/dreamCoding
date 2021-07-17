@@ -31,11 +31,7 @@ contactBtn.addEventListener('click', () => {
     scrollIntoView('#contact');
 });
 
-/* 클릭시 각 위치로 스크롤 부드럽게 함수 */
-function scrollIntoView(selector){
-    const contSection = document.querySelector(selector);
-    contSection.scrollIntoView({behavior:'smooth'});
-}
+
 
 //윈도우 스크롤 할시 서서히 section #Home이 사라지게 해라
 const home = document.querySelector('#Home');
@@ -46,3 +42,24 @@ document.addEventListener('scroll', ()=> {
     // 1 - 스크롤양값과 홈의 높이값을 나누고 1을 뺐는데 0이 넘으면 투명도를 주고 1이 된다 하면 불투명을 줘라
     homeContant.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+/* 스크롤 되었을때 화살표 버튼 나오게 하기 */
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll',()=>{
+    if(window.scrollY > homeHeight / 2){
+        arrowUp.classList.add('visible');
+    } else{
+        arrowUp.classList.remove('visible');
+    }
+});
+
+/* 화살표 버튼을 누르면 상위로 올라가게 하기 */
+arrowUp.addEventListener('click', ()=>{
+    scrollIntoView('#Home');
+});
+
+/* 클릭시 각 위치로 스크롤 부드럽게 함수 */
+function scrollIntoView(selector){
+    const contSection = document.querySelector(selector);
+    contSection.scrollIntoView({behavior:'smooth'});
+}
