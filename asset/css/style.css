@@ -336,6 +336,9 @@ p {
   justify-content: center;
   align-items: center;
 }
+.project.invisible {
+  display: none;
+}
 .project__img {
   max-width: 100%;
   max-height: 100%;
@@ -439,7 +442,7 @@ p {
   right: 50px;
   width: 70px;
   height: 70px;
-  background: var(--color-pink);
+  background: var(--color-dark-pink);
   font-size: 42px;
   color: var(--color-white);
   border-radius: 50%;

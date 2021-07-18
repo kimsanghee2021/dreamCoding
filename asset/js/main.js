@@ -63,3 +63,24 @@ function scrollIntoView(selector){
     const contSection = document.querySelector(selector);
     contSection.scrollIntoView({behavior:'smooth'});
 }
+
+/* My Work 버튼 클릭시 각 해당 내용들만 노출되게 작업 하기 */
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('work__projects');
+const projects = document.querySelectorAll('.project');
+
+workBtnContainer.addEventListener('click', (e)=>{
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if(filter == null){
+        return;
+    }
+    console.log(filter);
+    projects.forEach(function(project){
+        if(filter ==='*' || filter == project.dataset.type){
+            project.classList.remove('invisible');
+        } else{
+            project.classList.add('invisible');
+        }
+    });
+});
+
