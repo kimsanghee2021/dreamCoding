@@ -74,12 +74,7 @@ workBtnContainer.addEventListener('click', (e)=>{
     if(filter == null){
         return;
     }
-    /* My Work 버튼 클릭시 버튼 css 변경해주기 */
-    const active = document.querySelector('.category__btn.selected');
-    active.classList.remove('selected');
-    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
-    e.target.classList.add('selected');
-
+    console.log(filter);
     projects.forEach(function(project){
         if(filter ==='*' || filter == project.dataset.type){
             project.classList.remove('invisible');
