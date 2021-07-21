@@ -119,6 +119,7 @@ p {
   border-radius: var(--size-border-radius);
 <<<<<<< HEAD
   border: 1px solid transparent;
+<<<<<<< Updated upstream
 
 }
 .navbar_menu_item.active{
@@ -135,6 +136,16 @@ p {
 }
 .navbar_menu_item:hover {
 >>>>>>> parent of b63f094 (JS My Work 버튼 클릭시 css 변경해주기)
+=======
+
+}
+.navbar_menu_item.active{
+  border: 1px solid var(--color-white);
+  background-color: var(--color-dark-pink);
+}
+.navbar_menu_item:hover{
+  border: 1px solid var(--color-white);
+>>>>>>> Stashed changes
   background-color: var(--color-dark-pink);
 }
 
@@ -339,13 +350,29 @@ p {
   flex-wrap: wrap;
   justify-content: center;
 <<<<<<< HEAD
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
   opacity: 1;
+<<<<<<< Updated upstream
 }
 .work__projects.anim-out{
   opacity: 0;
   transform: translateY(40px) scale(0.96);
+<<<<<<< Updated upstream
 >>>>>>> parent of b63f094 (JS My Work 버튼 클릭시 css 변경해주기)
+=======
+=======
+  transition: all var(--animation-duration) ease-in;
+}
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.9) translateY(-40px);
+>>>>>>> Stashed changes
+=======
+>>>>>>> d7c07236dbac9d5f9d19aafc18557630a21377b5
+>>>>>>> Stashed changes
 }
 .project {
   width: 240px;
