@@ -22,7 +22,14 @@ navBarMenu.addEventListener('click', function(event){
     if(link == null){
         return;
     }
+    navBarMenu.classList.remove('open');  
     scrollIntoView(link);
+});
+
+/* 작은 화면일때 토글버튼 작동 하기 */
+const navBarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navBarToggleBtn.addEventListener('click',()=>{
+    navBarMenu.classList.toggle('open');
 });
 
 //contact 버튼 클릭시 해당 영역으로 슬라이드 이동하기
@@ -75,9 +82,7 @@ workBtnContainer.addEventListener('click', e =>{
     active.classList.remove('selected');
     const target = e.target.nodeName ==='BUTTON' ? e.target : e.target.parentNode;
     e.target.classList.add('selected');
-
-
-
+/* 클릭하면 하단 내용들이 작아지면서 없어졌다가 다시 크게 나오게 하는 작업 */
     projectContainer.classList.add('anim-out');
     setTimeout(function(){
         projects.forEach(function(project){

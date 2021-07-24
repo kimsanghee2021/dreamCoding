@@ -386,12 +386,12 @@ p {
   transform: translateY(0px);
 }
 .project__desc h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
   position: relative;
 }
 .project__desc h3:after {
   content: "";
-  width: 25px;
+  width: 30px;
   height: 2px;
   position: absolute;
   background: var(--color-dark-white);
@@ -485,12 +485,19 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background: var(--color-pink);
+  }
+  #navbar.navbar--dark {
+    padding: 16px;
   }
   .navbar__menu {
     flex-direction: column;
     width: 100%;
     text-align: center;
     display: none;
+  }
+  .navbar__menu.open {
+    display: block;
   }
   .about_majors {
     flex-direction: column;
