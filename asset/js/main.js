@@ -58,29 +58,42 @@ arrowUp.addEventListener('click', ()=>{
     scrollIntoView('#Home');
 });
 
+/* My Work 버튼 클릭시 각 해당 내용들만 노출되게 작업 하기 */
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+
+workBtnContainer.addEventListener('click', e =>{
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if(filter == null){
+        return;
+    }
+
+/* 버튼 클릭 했을시 선택된 버튼에만 색상 들어오게 하는 작업 */
+    // const active = document.querySelector('.category__btn.selected');
+    // console.log('active');
+    // active.classList.remove('selected');
+    // const target = e.target.nodeName ==='BUTTON' ? e.target : e.target.parentNode;
+    // e.target.classList.add('selected');
+
+
+
+    projectContainer.classList.add('anim-out');
+    setTimeout(function(){
+        projects.forEach(function(project){
+            if(filter ==='*' || filter == project.dataset.type){
+                project.classList.remove('invisible');
+            } else{
+                project.classList.add('invisible');
+            }
+        });
+        projectContainer.classList.remove('anim-out');
+    },300);
+});
+
+
 /* 클릭시 각 위치로 스크롤 부드럽게 함수 */
 function scrollIntoView(selector){
     const contSection = document.querySelector(selector);
     contSection.scrollIntoView({behavior:'smooth'});
 }
-
-/* My Work 버튼 클릭시 각 해당 내용들만 노출되게 작업 하기 */
-const workBtnContainer = document.querySelector('.work__categories');
-const projectContainer = document.querySelector('work__projects');
-const projects = document.querySelectorAll('.project');
-
-workBtnContainer.addEventListener('click', (e)=>{
-    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-    if(filter == null){
-        return;
-    }
-    console.log(filter);
-    projects.forEach(function(project){
-        if(filter ==='*' || filter == project.dataset.type){
-            project.classList.remove('invisible');
-        } else{
-            project.classList.add('invisible');
-        }
-    });
-});
-
