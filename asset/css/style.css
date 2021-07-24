@@ -176,6 +176,9 @@ p {
   color: var(--color-white);
   border-radius: var(--size-border-radius);
 }
+.home__contact:hover {
+  background-color: var(--color-orange);
+}
 
 /* section common */
 .section {
@@ -479,6 +482,9 @@ p {
 
 /* for blow 768px screen width */
 @media screen and (max-width: 768px) {
+  .section {
+    padding: 16px;
+  }
   .navbar__toggle-btn {
     display: block;
   }
