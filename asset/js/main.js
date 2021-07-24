@@ -70,11 +70,11 @@ workBtnContainer.addEventListener('click', e =>{
     }
 
 /* 버튼 클릭 했을시 선택된 버튼에만 색상 들어오게 하는 작업 */
-    // const active = document.querySelector('.category__btn.selected');
-    // console.log('active');
-    // active.classList.remove('selected');
-    // const target = e.target.nodeName ==='BUTTON' ? e.target : e.target.parentNode;
-    // e.target.classList.add('selected');
+    const active = document.querySelector('.category__btn.selected');
+    console.log('active');
+    active.classList.remove('selected');
+    const target = e.target.nodeName ==='BUTTON' ? e.target : e.target.parentNode;
+    e.target.classList.add('selected');
 
 
 
