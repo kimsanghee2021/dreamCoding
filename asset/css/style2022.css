@@ -1,0 +1,51 @@
+:root{
+
+    /* color */
+    --color-white : #fff;
+    --color-light-white : #eee;
+    --color-dark-white : #bdbdbd;
+    --color-pink :#fe918d;
+    --color-dark-pink : #ff6863;
+    --color-gray:#616161;
+    --color-light-gray:#7c7979;
+    --color-dark-gray:#4d4d4d;
+    --color-black: #000;
+    --color-blue:#73aace;
+    --color-yellow: #fff6cd;
+    --color-orange: #feac3e;
+
+    /* font-size */
+    --font-large:48px;
+    --font-medium:28px;
+    --font-regular:21px;
+    --font-small:16px;
+    --font-micro: 14px;
+
+    /* font-weight */
+    --weight-bold:700px;
+    --weight-semi-bold:600;
+    --weight-regular:400;
+    --weight-thin:100;
+
+    /* round */
+    --border-radius:4px;
+
+    /* animate */
+    --animation-duration:300ms;
+}
+
+/* 태그 초기화 */
+* {
+    box-sizing: border-box;
+}
+body{
+    padding:0; margin:0;   font-family: "Open Sans", sans-serif; cursor:default;
+}
+a{
+    text-decoration: none;
+    color:var(--color-white);
+}
+ul,li{list-style: none; padding-left:0;}
+button{background-color:transparent; cursor: pointer; border:none; outline:none; padding:0;}
+
+/* Typography */
