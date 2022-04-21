@@ -10,12 +10,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="asset/images/favicon-16x16.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style2022.css">
+    <link rel="stylesheet" href="asset/css/style2022.css">
     <title>상희 포트폴리오02 ver.2022</title>
 </head>
 <body>
     <!--navbar-->
-    <nav id="navbar">
+    <nav id="navbar" >
         <div class="navbar__logo">
             <i class="fab fa-apple"></i><a href="#">Sanghee</a>
         </div>
@@ -30,20 +30,20 @@
     </nav>
     <!--home-->
     <section id="home">
-        <img src="asset/images/profile.jpg" alt="" class="home__avatar">
+        <img src="asset/images/profile.jpg" alt="상희 이미지" class="home__avatar">
         <h1 class="home__title">Hello<br> I`m publisher</h1>
-        <h2 class="home__desc">I am Sanghee Kim, who dreams of becoming a designer and publisher, and also a front-end developer.</h2>
+        <h2 class="home__desc">I am Sanghee Kim, who dreams of becoming a designer and publisher, <br>and also a front-end developer.</h2>
         <button class="home__btn">Content Me</button>
     </section>
     <!--about-->
-    <section id="about">
+    <section id="about" class="section__container section">
         <h1>About Me</h1>
         <p>안녕하세요 웹 퍼블리셔 김상희 입니다. 저는 2년 3개월 뷰티니아 웹 에이전시에서 일을 하였으며,
-            디자이너와 퍼블리셔 위주의 일을 담당하였습니다. 현재 KG에듀원 에서 퍼블리셔로 웹 사이트 운영업무 및 프로젝트 작업 하고 있습니다.</p>
+            디자이너와 퍼블리셔 위주의 일을 담당하였습니다. <br>현재 KG에듀원 에서 퍼블리셔로 웹 사이트 운영업무 및 프로젝트 작업 하고 있습니다.</p>
             <div class="about__major">
                 <div class="major">
                     <div class="major__icon"><i class="fab fa-html5"></i></div>
-                    <div class="major__title">HTML5</div>
+                    <h2 class="major__title">HTML5</h2>
                     <p class="major__desc">기본 시멘틱 태그의 이용과 <br>쓰임에 대해 사용할 줄 압니다.</p>
                 </div>
                 <div class="major">
@@ -60,99 +60,87 @@
             <div class="about__jobs">
                 <div class="job">
                     <img src="asset/images/beautynia.gif" alt="뷰티니아 로고" class="job__logo">
-                    <p class="job__name">뷰티니아</p>
-                    <p class="job__period">2018.10.22 ~ 2020.12.18</p>
+                    <div class="job__desc">
+                        <p class="job__name">뷰티니아</p>
+                        <p class="job__period">2018.10.22 ~ 2020.12.18</p>
+                    </div>
                 </div>
                 <div class="job">
                     <img src="asset/images/kg_edu.jpg" alt="kg에듀원 로고" class="job__logo">
-                    <p class="job__name">kg에듀원</p>
-                    <p class="job__period">2021.05.10 ~2022.05.11</p>
+                    <div class="job__desc">
+                        <p class="job__name">kg에듀원</p>
+                        <p class="job__period">2021.05.10 ~2022.05.11</p>
+                    </div>
                 </div>
             </div>
     </section>
     <!--skills-->
-    <section id="skills">
-        <h1>Skills</h1>
-        <h2>Skils & Atrributes</h2>
-        <p>Experience with all phases of the software life-cycle. Passion for leaning new technologies. Capble of working within a team environment and independently. Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed.</p>
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="Skillset__title">Skills</h3>
-                <div class="skill">
-                    <div class="skill_desc">
-                        <span>HTML</span>
-                        <span>99%</span>
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skils & Atrributes</h2>
+            <p>Experience with all phases of the software life-cycle. Passion for leaning new technologies. Capble of working within a team environment and independently. Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed.</p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="Skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill_desc">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <div class="skill">
+                        <div class="skill_desc">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_desc">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_desc">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_desc">
-                        <span>CSS</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <div class="skill">
+                        <div class="skill_desc">
+                            <span>JAVASCRIPT</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill">
-                    <div class="skill_desc">
-                        <span>JAVASCRIPT</span>
-                        <span>20%</span>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="Skillset__title">tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Editor Plus</span></li>
+                            <li><span>visual studio code</span></li>
+                            <li><span>Photoshop</span></li>
+                            <li><span>figma</span></li>
+                            <li><span>XD</span></li>
+                            <li><span>Brackets</span></li>
+                        </ul>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <div class="etc">
+                        <h3 class="Skillset__title">etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                            <li><span>SVN</span></li>
+                            <li><span>Zeppelin</span></li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="Skillset__title">tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Editor Plus</span></li>
-                        <li><span>visual studio code</span></li>
-                        <li><span>Photoshop</span></li>
-                        <li><span>figma</span></li>
-                        <li><span>XD</span></li>
-                        <li><span>Brackets</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                    <h3 class="Skillset__title">etc</h3>
-                    <ul class="etc__list">
-                        <li><span>Git</span></li>
-                        <li><span>SVN</span></li>
-                        <li><span>Zeppelin</span></li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
     <!--work-->
-    <section id="work">
+    <section id="work" class="section section__container">
         <h1>My Work</h1>
         <h2>Projects</h2>
         <div class="work__cartegories">
-            <button class="category__btn" data-filter="*">All<span class="category__cont">8</span></button>
+            <button class="category__btn active" data-filter="*">All<span class="category__cont">8</span></button>
             <button class="category__btn" data-filter="adaptive-site">adaptive-site<span class="category__cont">3</span></button>
             <button class="category__btn" data-filter="responsive-site">responsive-site<span class="category__cont">4</span></button>
             <button class="category__btn" data-filter="JavaScript">JavaScript<span class="category__cont">2</span></button>
@@ -214,38 +202,42 @@
                     <p>Clone Coding width HTML5 & CSS3</p>
                 </div>
             </a>
-        </div>
+    </div>
     </section>
     <!--testimonials-->
-    <section id="testimonials">
-        <h1>Testimonials</h1>
-        <h2>See what they say about me</h2>
-        <div class="testimonials">
-            <div class="testimonial">
-                <img src="asset/images/people.jpg" alt="사람들">
-                <div class="testimonial__desc">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, poroo quia? Molestiae nihil magniiusto? Temetur minus harum earum dolorum obcaecati, sapientie iste quia magnam? Veritaties quos aspernatur natus similique</p>
-                    <p class="name"><em>Elie</em>/samsong</p>
+    <section id="testimonials" class="section">
+    <div class="section__container">
+            <h1>Testimonials</h1>
+            <h2>See what they say about me</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="asset/images/people.jpg" alt="사람들">
+                    <div class="testimonial__desc">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, poroo quia? Molestiae nihil magniiusto? Temetur minus harum earum dolorum obcaecati, sapientie iste quia magnam? Veritaties quos aspernatur natus similique</p>
+                        <p class="name"><em>Elie</em>/samsong</p>
+                    </div>
                 </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial__desc">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, poroo quia? Molestiae nihil magniiusto? Temetur minus harum earum dolorum obcaecati, sapientie iste quia magnam? Veritaties quos aspernatur natus similique</p>
-                    <p class="name"><em>Elie</em>/samsong</p>
+                <div class="testimonial">
+                    <div class="testimonial__desc">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, poroo quia? Molestiae nihil magniiusto? Temetur minus harum earum dolorum obcaecati, sapientie iste quia magnam? Veritaties quos aspernatur natus similique</p>
+                        <p class="name"><em>Elie</em>/samsong</p>
+                    </div>
+                    <img src="asset/images/people.jpg" alt="사람들">
                 </div>
-                <img src="asset/images/people.jpg" alt="사람들">
             </div>
         </div>
     </section>
     <!--contact-->
-    <section id="contact">
-        <h1 class="contact__title">Let`s talk</h1>
-        <h2 class="contact__email">tkdgmltjddnr921123@gmail.com</h2>
-        <ul class="contact__links">
-            <li><a href="#none"><i class="fab fa-github"></i></a></li>
-            <li><a href="#none"><i class="fas fa-envelope-open-text"></i></a></li>
-        </ul>
-        <p class="contact__rights">2021 Dream Coding Sanghee - All rights reserved.</p>
+    <section id="contact" class="section">
+        <div class="section__container">
+            <h1 class="contact__title">Let`s talk</h1>
+            <h2 class="contact__email">tkdgmltjddnr921123@gmail.com</h2>
+            <ul class="contact__links">
+                <li><a href="#none"><i class="fab fa-github"></i></a></li>
+                <li><a href="#none"><i class="fas fa-envelope-open-text"></i></a></li>
+            </ul>
+            <p class="contact__rights">2021 Dream Coding Sanghee - All rights reserved.</p>
+        </div>
     </section>
     <!--위로올라가기 화살표-->
     <button class="arrow-up">
