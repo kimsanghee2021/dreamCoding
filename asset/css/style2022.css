@@ -66,14 +66,16 @@ p{font-size:var(--font-small); font-weight:var(--weight-regular); color:var(--co
     width:100%; padding:16px; color:var(--color-white); z-index: 99;   
 }
 #navbar.navbar--dark{ background: var(--color-pink);padding:8px;}
+#navbar.navbar--dark .navbar__toggle-btn{top:7px;}
 .navbar__logo{font-size:var(--font-medium); font-weight:var(--weight-bold); display: flex; gap:0 5px; align-items: center;}
 .navbar__menu{display: flex; gap:10px;}
+.navbar__menu.open { display: block;}
 .navbar__menu li{padding:8px 10px; transition: var(--animation-duration); border:1px solid transparent; cursor:pointer;}
 .navbar__menu li:hover{ border:1px solid var(--color-white); border-radius:var(--border-radius); padding:8px 10px; background-color: var(--color-dark-pink);}
-.navbar__menu__item.active{border:1px solid var(--color-white);  background-color: var(--color-dark-pink);}
+.navbar__menu__item.active{border:1px solid var(--color-white);  background-color: var(--color-dark-pink); border-radius:var(--border-radius);}
 
 .navbar__toggle-btn{
-    position: absolute; top:20px; right:32px; font-size:24px; color:var(--color-white); display: none;
+    position: absolute; top:7px; right:32px; font-size:24px; color:var(--color-white); display: none;
 }
 /* home */
 #home{background: url('../images/homebackground.png') no-repeat  center / cover; width:100%; padding:120px 40px 80px; text-align: center; }
@@ -154,8 +156,11 @@ p{font-size:var(--font-small); font-weight:var(--weight-regular); color:var(--co
 .contact__links li a{font-size:42px;margin:0 5px; transition: var(--animation-duration);}
 .contact__links li a:hover{color:var(--color-yellow);}
 /* arrow-up */
-.arrow-up{position: fixed; bottom:50px; right:50px; z-index: 99; width:70px; height:70px; background: var(--color-dark-pink); color:var(--color-white); border-radius: 50%; font-size: 42px; transition: opacity 0.3s ease-in;}
-
+.arrow-up{position: fixed; opacity: 0; transition: opacity var(--animation-duration) ease-in; pointer-events: none; bottom:50px; right:50px; z-index: 99; width:70px; height:70px; background: var(--color-dark-pink); color:var(--color-white); border-radius: 50%; font-size: 42px; transition: opacity 0.3s ease-in;}
+.arrow-up.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
 
 /** 반응형 768px **/
 @media screen and (max-width:1200px){
@@ -174,6 +179,7 @@ p{font-size:var(--font-small); font-weight:var(--weight-regular); color:var(--co
 /* home */
 .navbar__toggle-btn{display: block; top:16px; right:16px;}
 .navbar__menu{display: none; text-align: center;}
+.navbar__menu.open { display: block;}
 #navbar{background-color: var(--color-pink); display: block;}
 
 /* aboutme */

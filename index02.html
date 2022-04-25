@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style2022.css">
     <title>상희 포트폴리오02 ver.2022</title>
+    <script defer src='asset/js/main2.js'></script>
 </head>
 <body>
     <!--navbar-->
@@ -20,12 +21,12 @@
             <i class="fab fa-apple"></i><a href="#">Sanghee</a>
         </div>
         <ul class="navbar__menu">
-            <li class="navbar__menu__item">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">Work</li>
-            <li class="navbar__menu__item">Testimonials</li>
-            <li class="navbar__menu__item">Contact</li>
+            <li class="navbar__menu__item active"  data-link="#home" >Home</li>
+            <li class="navbar__menu__item"  data-link="#about">About</li>
+            <li class="navbar__menu__item"  data-link="#skills">Skills</li>
+            <li class="navbar__menu__item"  data-link="#work">Work</li>
+            <li class="navbar__menu__item"  data-link="#testimonials">Testimonials</li>
+            <li class="navbar__menu__item"  data-link="#contact">Contact</li>
         </ul>
         <!-- Toggle button -->
         <button class="navbar__toggle-btn">
@@ -34,10 +35,12 @@
     </nav>
     <!--home-->
     <section id="home">
-        <img src="asset/images/profile.jpg" alt="상희 이미지" class="home__avatar">
-        <h1 class="home__title">Hello<br> I`m publisher</h1>
-        <h2 class="home__desc">I am Sanghee Kim, who dreams of becoming a designer and publisher, <br>and also a front-end developer.</h2>
-        <button class="home__btn">Content Me</button>
+        <div class="home__contatiner">
+            <img src="asset/images/profile.jpg" alt="상희 이미지" class="home__avatar">
+            <h1 class="home__title">Hello<br> I`m publisher</h1>
+            <h2 class="home__desc">I am Sanghee Kim, who dreams of becoming a designer and publisher, <br>and also a front-end developer.</h2>
+            <button class="home__btn" data-link="#contact">Content Me</button>
+        </div>
     </section>
     <!--about-->
     <section id="about" class="section__container section">
